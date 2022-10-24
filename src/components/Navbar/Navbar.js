@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Transition } from "@headlessui/react"
 
-import Logo from "../assets/logo.png"
+import Logo from "../../assets/logo.png"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -107,7 +107,7 @@ function Navbar() {
         >
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
                   href="/"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"

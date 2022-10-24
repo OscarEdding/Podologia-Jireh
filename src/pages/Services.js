@@ -2,13 +2,13 @@ import React from "react"
 
 import Carousel from "../components/Carousel/Carousel"
 
-function Home() {
+function Services() {
 
   return (
-    <div>
-      <Carousel />
+    <div className="h-screen bg-black">
+      Hola soy services
     </div>
   )
 }
 
-export default Home
+export default Services
