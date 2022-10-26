@@ -28,14 +28,14 @@ function Navbar() {
                   </a>
 
                   <a
-                    href="#"
+                    href="/services"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Servicios
                   </a>
 
                   <a
-                    href="#"
+                    href="/gallery"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Galeria

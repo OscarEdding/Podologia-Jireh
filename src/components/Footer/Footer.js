@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="p-4 bg-white sm:p-6 bg-gradient-to-r from-cyan-900 to-cyan-500">
-        <div className="md:flex md:justify-between md:px-60">
+        <div className="lg:flex md:justify-between md:px-36">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
               <img src={Logo} className="mr-3 h-8" alt="FlowBite Logo" />
@@ -43,21 +43,21 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">Información</h2>
+              <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">Agendar aquí</h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
                   <a href="https://wa.me/56936354209?text=Hola,%20quisiera%20agendar%20una%20hora." className="hover:underline">+56 9 3635 4209</a>
                 </li>
-                <li>
-                  <a href="https://goo.gl/maps/h3ZXhebmPJfRxP9f7" className="hover:underline">Estado 25 <br /> Piso 3, Oficina 5</a>
-                </li>
+                {/* <li className="mb-4">
+                  <a className="font-bold">No olvide agendar su hora</a>
+                </li> */}
               </ul>
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-700 sm:mx-auto lg:my-8 md:mx-32" />
+        <hr className="my-6 border-gray-700 sm:mx-auto lg:my-8 md:mx-20" />
         <div className="sm:flex sm:items-center sm:justify-center">
-          <span className="text-sm text-gray-300 sm:text-center mr-5">© 2022 <a href="https://flowbite.com/" className="hover:underline">Podología JIREH™</a>. Todos los derechos reservados.
+          <span className="text-sm text-gray-300 sm:text-center mr-5">© 2022 <a href="https://www.instagram.com/podologiaclinicjireh/" className="hover:underline">Podología JIREH™</a>. Todos los derechos reservados.
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="#" className="text-gray-300 hover:text-blue-600">
