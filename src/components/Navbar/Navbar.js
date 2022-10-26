@@ -42,7 +42,7 @@ function Navbar() {
                   </a>
 
                   <a
-                    href="#"
+                    href="/#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Contacto
@@ -116,21 +116,21 @@ function Navbar() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Servicios
                 </a>
 
                 <a
-                  href="#"
+                  href="/#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Galeria
                 </a>
 
                 <a
-                  href="#"
+                  href="/#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contacto
