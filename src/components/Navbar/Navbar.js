@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Transition } from "@headlessui/react"
+import { NavLink } from 'react-router-dom'
 
 import Logo from "../../assets/logo.png"
 
@@ -20,33 +21,29 @@ function Navbar() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="/"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Inicio
-                  </a>
+                  <NavLink 
+                    to="/" 
+                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">
+                      Inicio
+                  </NavLink>
 
-                  <a
-                    href="/services"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
+                  <NavLink
+                    to="/services"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                     Servicios
-                  </a>
+                  </NavLink>
 
-                  <a
-                    href="/gallery"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
+                  <NavLink
+                    to="/gallery"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                     Galeria
-                  </a>
+                  </NavLink>
 
-                  <a
-                    href="/#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
+                  <NavLink
+                    to="/contact"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                     Contacto
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>
@@ -108,33 +105,29 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="/"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <NavLink
+                  to="/"
+                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
                   Inicio
-                </a>
+                </NavLink>
 
-                <a
-                  href="/#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <NavLink
+                  to="/services"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Servicios
-                </a>
+                </NavLink>
 
-                <a
-                  href="/#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <NavLink
+                  to="/gallery"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Galeria
-                </a>
+                </NavLink>
 
-                <a
-                  href="/#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <NavLink
+                  to="/contact"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                   Contacto
-                </a>
+                </NavLink>
               </div>
             </div>
           )}
