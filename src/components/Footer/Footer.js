@@ -32,7 +32,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">Sigueme en</h2>
+              <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">Siguenos en</h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
                   <a href="https://www.instagram.com/podologiaclinicjireh/" className="hover:underline ">Instagram</a>
