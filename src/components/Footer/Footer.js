@@ -1,7 +1,5 @@
 import { React } from "react"
 
-import Logo from "../../assets/logo.png"
-
 const Footer = () => {
 
   return (
@@ -10,7 +8,7 @@ const Footer = () => {
         <div className="lg:flex md:justify-between md:px-36">
           <div className="mb-6">
             <a href="https://www.instagram.com/podologiaclinicjireh/" className="flex items-center">
-              <img src={Logo} className="mr-3 h-8" alt="FlowBite Logo" />
+              <img src="https://podologia-jireh.s3.sa-east-1.amazonaws.com/logo.png" className="mr-3 h-8" alt="FlowBite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Podología JIREH</span>
             </a>
           </div>

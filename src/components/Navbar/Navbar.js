@@ -2,8 +2,6 @@ import React, { useState } from "react"
 import { Transition } from "@headlessui/react"
 import { NavLink } from 'react-router-dom'
 
-import Logo from "../../assets/logo.png"
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
@@ -15,8 +13,8 @@ function Navbar() {
               <div className="flex-shrink-0">
                 <img
                   className="h-12 w-12"
-                  src={Logo}
-                  alt="Workflow"
+                  src="https://podologia-jireh.s3.sa-east-1.amazonaws.com/logo.png"
+                  alt="JIREH"
                 />
               </div>
               <div className="hidden md:block">
