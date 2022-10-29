@@ -1,11 +1,16 @@
 import React, { useState } from "react"
 import { Transition } from "@headlessui/react"
-import { NavLink } from 'react-router-dom'
+import { Link, animateScroll as scroll } from "react-scroll"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
-    <div className="fixed z-10 w-full">
+    <div className="fixed z-10 w-full shadow-[0_4px_14px_0_rgba(0,0,0,0.4)]">
       <nav className="bg-gradient-to-r from-cyan-900 to-cyan-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -15,33 +20,43 @@ function Navbar() {
                   className="h-12 w-12"
                   src="https://podologia-jireh.s3.sa-east-1.amazonaws.com/logo.png"
                   alt="JIREH"
+                  onClick={scrollToTop}
                 />
               </div>
               <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  <NavLink 
-                    to="/" 
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">
+                <div className="ml-20 flex items-baseline space-x-4">
+                  <Link
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500} 
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                       Inicio
-                  </NavLink>
+                  </Link>
 
-                  <NavLink
-                    to="/services"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <Link
+                    activeClass="active"
+                    to="services"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                     Servicios
-                  </NavLink>
+                  </Link>
 
-                  <NavLink
-                    to="/gallery"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <Link
+                    activeClass="active"
+                    to="gallery"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                     Galeria
-                  </NavLink>
-
-                  <NavLink
-                    to="/contact"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                    Contacto
-                  </NavLink>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -103,29 +118,38 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <NavLink
-                  to="/"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">
+                <Link
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
                   Inicio
-                </NavLink>
+                </Link>
 
-                <NavLink
-                  to="/services"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                <Link
+                  activeClass="active"
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
                   Servicios
-                </NavLink>
+                </Link>
 
-                <NavLink
-                  to="/gallery"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                <Link
+                  activeClass="active"
+                  to="gallery"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
                   Galeria
-                </NavLink>
-
-                <NavLink
-                  to="/contact"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                  Contacto
-                </NavLink>
+                </Link>
               </div>
             </div>
           )}
