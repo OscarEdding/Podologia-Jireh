@@ -1,12 +1,12 @@
 import "./Tailwind.css"
 import React from 'react'
 
-import Navbar from './components/Navbar/Navbar'
+import Navbar from "./components/Navbar/Navbar"
 import Section from "./components/Section/Section"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
 import Gallery from "./pages/Gallery"
-import Footer from './components/Footer/Footer'
+import Footer from "./components/Footer/Footer"
 import WhatsAppFloating from "./components/WhatsApp Button/WhatsAppFloating"
 
 function PodologiaJireh() {
