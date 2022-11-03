@@ -2,7 +2,6 @@ import "./Tailwind.css"
 import React from 'react'
 
 import Navbar from "./components/Navbar/Navbar"
-import Section from "./components/Section/Section"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
 import Gallery from "./pages/Gallery"
@@ -14,23 +13,14 @@ function PodologiaJireh() {
     <div>
       <Navbar />
       <div>
-      <Section
-        dark={true}
-        id="home"
-      />
-      <Home />
+        <div  id="home" />
+        <Home />
 
-      <Section
-        dark={true}
-        id="services"
-      />
-      <Services />
+        <div  id="services" />
+        <Services />
 
-      <Section
-        dark={true}
-        id="gallery"
-      />
-      <Gallery />
+        <div id="gallery" />
+        <Gallery />
       </div>
       <WhatsAppFloating />
       < Footer />

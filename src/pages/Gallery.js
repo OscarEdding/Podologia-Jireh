@@ -1,48 +1,36 @@
 import React from "react"
 
 function Gallery() {
+  const gallery = [
+    "https://dummyimage.com/421x261",
+    "https://dummyimage.com/421x261",
+    "https://dummyimage.com/421x261",
+    "https://dummyimage.com/421x261",
+    "https://dummyimage.com/421x261",
+    "https://dummyimage.com/421x261",
+    "https://dummyimage.com/421x261",
+    "https://dummyimage.com/421x261",
+    "https://dummyimage.com/421x261",
+    "https://dummyimage.com/421x261"
+  ]
 
   return (
     <div>
-      <section className="overflow-hidden text-gray-700 ">
-        <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
-          <div className="flex flex-wrap -m-1 md:-m-2">
-            <div className="flex flex-wrap w-1/3">
-              <div className="w-full p-1 md:p-2">
-                <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
+      <section className="min-h-screen body-font text-gray-600 ">
+        <div className="container mx-auto px-5 py-10">
+          <div className="-m-4 flex flex-wrap">
+            { gallery.map((img) => (
+              <div className="w-full p-4 md:w-1/2 lg:w-1/4">
+                <span className="relative block h-48 overflow-hidden rounded">
+                  <img alt="ecommerce" className="block h-full w-full object-cover object-center cursor-pointer" src={img} />
+                </span>
+                <div className="mt-4">
+                  <h3 className="title-font mb-1 text-xs tracking-widest text-gray-500">PROJECT</h3>
+                  <h2 className="title-font text-lg font-medium text-gray-900">The Catalyzer</h2>
+                  <p className="mt-1">01/09/2022</p>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-wrap w-1/3">
-              <div className="w-full p-1 md:p-2">
-                <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" />
-              </div>
-            </div>
-            <div className="flex flex-wrap w-1/3">
-              <div className="w-full p-1 md:p-2">
-                <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" />
-              </div>
-            </div>
-            <div className="flex flex-wrap w-1/3">
-              <div className="w-full p-1 md:p-2">
-                <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
-              </div>
-            </div>
-            <div className="flex flex-wrap w-1/3">
-              <div className="w-full p-1 md:p-2">
-                <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" />
-              </div>
-            </div>
-            <div className="flex flex-wrap w-1/3">
-              <div className="w-full p-1 md:p-2">
-                <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
-                  src="https://www.instagram.com/p/CKov02qJjsf/?utm_source=ig_web_button_share_sheet" />
-              </div>
-            </div>
+            ))} 
           </div>
         </div>
       </section>
