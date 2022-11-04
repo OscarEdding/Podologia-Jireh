@@ -2,16 +2,16 @@ import React from "react"
 
 function Gallery() {
   const gallery = [
-    "https://dummyimage.com/421x261",
-    "https://dummyimage.com/421x261",
-    "https://dummyimage.com/421x261",
-    "https://dummyimage.com/421x261",
-    "https://dummyimage.com/421x261",
-    "https://dummyimage.com/421x261",
-    "https://dummyimage.com/421x261",
-    "https://dummyimage.com/421x261",
-    "https://dummyimage.com/421x261",
-    "https://dummyimage.com/421x261"
+    "http://placeimg.com/640/480/any",
+    "http://placeimg.com/641/480/any",
+    "http://placeimg.com/642/480/any",
+    "http://placeimg.com/643/480/any",
+    "http://placeimg.com/644/480/any",
+    "http://placeimg.com/645/480/any",
+    "http://placeimg.com/646/480/any",
+    "http://placeimg.com/647/480/any",
+    "http://placeimg.com/648/480/any",
+    "http://placeimg.com/649/480/any"
   ]
 
   return (
