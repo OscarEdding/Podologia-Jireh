@@ -1,6 +1,27 @@
 import { React } from "react"
 
+import { Link } from "react-scroll"
+
 const Footer = () => {
+
+  const sections = [
+    {
+      to: "home",
+      service: "Inicio"
+    },
+    {
+      to: "services",
+      service: "Servicios"
+    },
+    {
+      to: "prices",
+      service: "Precios"
+    },
+    {
+      to: "gallery",
+      service: "Galería"
+    }
+  ]
 
   return (
     <div>
@@ -16,15 +37,20 @@ const Footer = () => {
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">JIREH</h2>
               <ul className="text-gray-300">
-                <li className="mb-4">
-                  <a href="/" className="hover:underline">Inicio</a>
-                </li>
-                <li className="mb-4">
-                  <a href="/services" className="hover:underline">Servicios</a>
-                </li>
-                <li>
-                  <a href="/gallery" className="hover:underline">Galería</a>
-                </li>
+                {sections.map((section) => (
+                  <li className="mb-4">
+                    <Link
+                      activeClass="active"
+                      to={section.to}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      className="hover:underline">
+                      {section.service}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>

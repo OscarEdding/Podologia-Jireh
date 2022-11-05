@@ -4,6 +4,7 @@ import React from 'react'
 import Navbar from "./components/Navbar/Navbar"
 import Home from "./pages/Home"
 import Services from "./pages/Services"
+import Prices from "./pages/Prices"
 import Gallery from "./pages/Gallery"
 import Footer from "./components/Footer/Footer"
 import WhatsAppFloating from "./components/WhatsApp Button/WhatsAppFloating"
@@ -16,8 +17,11 @@ function PodologiaJireh() {
         <div  id="home" />
         <Home />
 
-        <div  id="services" />
+        <div id="services" />
         <Services />
+
+        <div  id="prices" />
+        <Prices />
 
         <div id="gallery" />
         <Gallery />

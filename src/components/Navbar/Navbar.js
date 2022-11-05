@@ -3,11 +3,31 @@ import { Transition } from "@headlessui/react"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 function Navbar() {
+  
   const [isOpen, setIsOpen] = useState(false)
 
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
+
+  const sections = [
+    {
+      to: "home",
+      service: "Inicio"
+    },
+    {
+      to: "services",
+      service: "Servicios"
+    },
+    {
+      to: "prices",
+      service: "Precios"
+    },
+    {
+      to: "gallery",
+      service: "Galería"
+    }
+  ]
 
   return (
     <div className="fixed z-10 w-full shadow-[0_4px_14px_0_rgba(0,0,0,0.4)]">
@@ -25,38 +45,18 @@ function Navbar() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-20 flex items-baseline space-x-4">
-                  <Link
-                    activeClass="active"
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500} 
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                      Inicio
-                  </Link>
-
-                  <Link
-                    activeClass="active"
-                    to="services"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                    Servicios
-                  </Link>
-
-                  <Link
-                    activeClass="active"
-                    to="gallery"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                    Galeria
-                  </Link>
+                    {sections.map((section) => (
+                      <Link
+                        activeClass="active"
+                        to={section.to}
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500} 
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
+                          {section.service}
+                      </Link>
+                    ))}
                 </div>
               </div>
             </div>
@@ -118,38 +118,18 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                {sections.map((section) => (
                 <Link
                   activeClass="active"
-                  to="home"
+                  to={section.to}
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
-                  Inicio
+                  {section.service}
                 </Link>
-
-                <Link
-                  activeClass="active"
-                  to="services"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
-                  Servicios
-                </Link>
-
-                <Link
-                  activeClass="active"
-                  to="gallery"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
-                  Galeria
-                </Link>
+                ))}
               </div>
             </div>
           )}

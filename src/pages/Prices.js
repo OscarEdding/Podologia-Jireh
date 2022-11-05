@@ -36,17 +36,16 @@ function Prices() {
   ]
 
   return (
-    <div className="bg-black">
+    <div>
       <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Los precios varian según el tipo de servicio solicitado</h2>
             <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Los servicios entregados son realizados por profesionales especialistas en el área con estudios completados y con título profesional.</p>
           </div>
-          <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-
+          <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around gap-10 md:gap-0">
             {services.map((service) => (
-              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white w-[98%] md:w-2/6">
                 <h3 className="mb-4 text-2xl font-semibold">{service.title}</h3>
                 <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">{service.subtitle}</p>
                 <div className="flex justify-center items-baseline my-8">
