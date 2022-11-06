@@ -1,5 +1,5 @@
 import React from "react"
-import { JackInTheBox, Roll } from "react-awesome-reveal"
+import { JackInTheBox, Zoom } from "react-awesome-reveal"
 
 function Prices() {
 
@@ -46,7 +46,7 @@ function Prices() {
             <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Los servicios entregados son realizados por profesionales especialistas en el área con estudios completados y con título profesional.</p>
           </div>
           </JackInTheBox>
-          <Roll>
+          <Zoom>
           <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around gap-10 md:gap-0">
             {services.map((service, indexService) => (
               <div key={indexService} className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white w-[98%] md:w-2/6">
@@ -91,7 +91,7 @@ function Prices() {
               </div>
             ))}
           </div>
-          </Roll>
+          </Zoom>
         </div>
       </section>
     </div>
