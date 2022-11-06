@@ -45,16 +45,17 @@ function Navbar() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-20 flex items-baseline space-x-4">
-                    {sections.map((section) => (
+                    {sections.map((sectionDesktop, indexDesktop) => (
                       <Link
+                        key={indexDesktop}
                         activeClass="active"
-                        to={section.to}
+                        to={sectionDesktop.to}
                         spy={true}
                         smooth={true}
                         offset={-70}
                         duration={500} 
                         className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                          {section.service}
+                          {sectionDesktop.service}
                       </Link>
                     ))}
                 </div>
@@ -118,16 +119,17 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                {sections.map((section) => (
+                {sections.map((sectionMobile, indexMobile) => (
                 <Link
+                  key={indexMobile}
                   activeClass="active"
-                  to={section.to}
+                  to={sectionMobile.to}
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
-                  {section.service}
+                    {sectionMobile.service}
                 </Link>
                 ))}
               </div>

@@ -37,8 +37,8 @@ const Footer = () => {
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">JIREH</h2>
               <ul className="text-gray-300">
-                {sections.map((section) => (
-                  <li className="mb-4">
+                {sections.map((section, indexSection) => (
+                  <li key={indexSection} className="mb-4">
                     <Link
                       activeClass="active"
                       to={section.to}
@@ -70,9 +70,6 @@ const Footer = () => {
                 <li className="mb-4">
                   <a href="https://wa.me/56936354209?text=Hola,%20quisiera%20agendar%20una%20hora." className="hover:underline">+56 9 3635 4209</a>
                 </li>
-                {/* <li className="mb-4">
-                  <a className="font-bold">No olvide agendar su hora</a>
-                </li> */}
               </ul>
             </div>
           </div>

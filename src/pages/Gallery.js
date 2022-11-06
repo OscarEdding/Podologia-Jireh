@@ -19,8 +19,8 @@ function Gallery() {
       <section className="min-h-screen body-font text-gray-600 ">
         <div className="container mx-auto px-5 py-10">
           <div className="-m-4 flex flex-wrap">
-            { gallery.map((img) => (
-              <div className="w-full p-4 md:w-1/2 lg:w-1/4">
+            { gallery.map((img, indexImg) => (
+              <div key={indexImg} className="w-full p-4 md:w-1/2 lg:w-1/4">
                 <span className="relative block h-48 overflow-hidden rounded">
                   <img alt="ecommerce" className="block h-full w-full object-cover object-center cursor-pointer" src={img} />
                 </span>

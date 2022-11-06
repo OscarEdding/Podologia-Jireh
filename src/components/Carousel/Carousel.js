@@ -53,6 +53,7 @@ const Carousel = () => {
       <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
         {buttons.map((button) => (
           <button
+            key={button.slide}
             type="button"
             data-bs-target="#carouselExampleCrossfade"
             data-bs-slide-to={button.slide}
@@ -63,8 +64,8 @@ const Carousel = () => {
         ))}
       </div>
       <div className="carousel-inner relative w-full overflow-hidden">
-        {carousel.map((photo) => (
-          <div className={`carousel-item ${photo.active} float-left w-full`}>
+        {carousel.map((photo, indexPhoto) => (
+          <div key={indexPhoto} className={`carousel-item ${photo.active} float-left w-full`}>
             <img
               src={photo.img}
               className="block w-full"
