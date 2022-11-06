@@ -21,7 +21,7 @@ function Services() {
   const customAnimationFadeLeft = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(-80px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
   }
 
   to {
@@ -33,7 +33,7 @@ function Services() {
   const customAnimationFadeRight = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(80px, 0, 0);
+    transform: translate3d(50px, 0, 0);
   }
 
   to {
