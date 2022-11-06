@@ -1,5 +1,6 @@
 import React from "react"
-import { Slide } from "react-awesome-reveal"
+import { Reveal } from "react-awesome-reveal"
+import { keyframes } from "@emotion/react"
 
 function Services() {
 
@@ -17,10 +18,34 @@ function Services() {
     "Reconstrucción ungueal"
   ]
 
+  const customAnimationFadeLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(-80px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`
+
+  const customAnimationFadeRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(80px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`
+
   return (
     <div className="flex flex-col md:flex-row items-center md:justify-around my-20 gap-10 md:gap-0">
       <div className="p-6 shadow-lg rounded-lg bg-gray-100 text-gray-700 w-4/5 md:w-2/5">
-        <Slide direction="left">
+        <Reveal keyframes={customAnimationFadeLeft}>
           <h2 className="font-semibold text-3xl mb-5">Servicios</h2>
           <ul className="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
             {services.map((service) => (
@@ -30,11 +55,11 @@ function Services() {
               </li>
             ))}
           </ul>
-        </Slide>
+        </Reveal>
       </div>
 
       <div className="p-6 shadow-lg rounded-lg bg-gray-100 text-gray-700 w-4/5 md:w-2/5">
-        <Slide direction="right">
+        <Reveal keyframes={customAnimationFadeRight}>
         <h2 className="font-semibold text-3xl mb-5">Otros servicios</h2>
         <ul className="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
           {otherServices.map((service) => (
@@ -56,7 +81,7 @@ function Services() {
         >
           Más información
         </a>
-        </Slide>
+        </Reveal>
       </div>
     </div>
   )

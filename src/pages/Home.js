@@ -1,16 +1,41 @@
 import React from "react"
-import { Fade } from "react-awesome-reveal"
+import { Reveal } from "react-awesome-reveal"
+import { keyframes } from "@emotion/react"
 
 import Carousel from "../components/Carousel/Carousel"
 
 function Home() {
+
+  const customAnimationFadeLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`
+
+  const customAnimationFadeRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`
 
   return (
     <div>
       <Carousel />
       <div className="w-full h-full  bg-fixed bg-cover bg-[url('https://podologia-jireh.s3.sa-east-1.amazonaws.com/bg-podology.jpg')]">
         <div className="py-10 bg-gray-50/50">
-          <Fade direction="left">
+          <Reveal keyframes={customAnimationFadeLeft}>
             <div className="flex flex-col py-5 items-start">
               <div className="flex flex-col px-10 md:w-2/4">
                 <p className="font-extrabold text-3xl text-white">¿Que es la podología clínica?</p>
@@ -18,8 +43,8 @@ function Home() {
                 <p className="font-semibold text-lg">Podología clínica es la ciencia que abarca el diagnóstico y tratamiento de las afecciones de los pies mediante diversas técnicas.</p>
               </div>
             </div>
-          </Fade>
-          <Fade direction="right">
+          </Reveal>
+          <Reveal keyframes={customAnimationFadeRight}>
             <div className="flex flex-col py-5 items-end">
               <div className="flex flex-col px-10 md:w-2/4 md:justify-items-end">
                 <p className="font-extrabold text-3xl text-white">¿Para que nos sirve?</p>
@@ -31,7 +56,7 @@ function Home() {
                 </ul>
               </div>
             </div>
-          </Fade>
+          </Reveal>
         </div>
       </div>
     </div>
