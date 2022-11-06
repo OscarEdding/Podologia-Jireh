@@ -9,7 +9,7 @@ function Home() {
   const customAnimationFadeLeft = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-20px, 0, 0);
   }
 
   to {
@@ -21,7 +21,7 @@ function Home() {
   const customAnimationFadeRight = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(50px, 0, 0);
+    transform: translate3d(20px, 0, 0);
   }
 
   to {
