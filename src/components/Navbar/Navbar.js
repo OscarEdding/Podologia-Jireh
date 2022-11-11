@@ -7,8 +7,8 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   const sections = [
     {
@@ -55,7 +55,7 @@ function Navbar() {
                       offset={-70}
                       duration={500}
                       className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer"
-                      >
+                    >
                       {sectionDesktop.service}
                     </Link>
                   ))}

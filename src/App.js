@@ -1,5 +1,5 @@
 import "./Tailwind.css"
-import React from 'react'
+import React from "react"
 
 import Navbar from "./components/Navbar/Navbar"
 import Home from "./pages/Home"
@@ -10,17 +10,18 @@ import Footer from "./components/Footer/Footer"
 import WhatsAppFloating from "./components/WhatsApp Button/WhatsAppFloating"
 
 function PodologiaJireh() {
+
   return (
     <div>
       <Navbar />
       <div>
-        <div  id="home" />
+        <div id="home" />
         <Home />
 
         <div id="services" />
         <Services />
 
-        <div  id="prices" />
+        <div id="prices" />
         <Prices />
 
         <div id="gallery" />

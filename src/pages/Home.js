@@ -7,28 +7,28 @@ import Carousel from "../components/Carousel/Carousel"
 function Home() {
 
   const customAnimationFadeLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(-40px, 0, 0);
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(-40px, 0, 0);
+    }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  `
 
   const customAnimationFadeRight = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(40px, 0, 0);;
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(40px, 0, 0);;
+    }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  `
 
   return (
     <div>
@@ -44,6 +44,7 @@ function Home() {
               </div>
             </div>
           </Reveal>
+
           <Reveal keyframes={customAnimationFadeRight}>
             <div className="flex flex-col py-5 items-end">
               <div className="flex flex-col md:w-2/4 md:justify-items-end">

@@ -20,28 +20,28 @@ function Services() {
   ]
 
   const customAnimationFadeLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(-50px, 0, 0);
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(-50px, 0, 0);
+    }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  `
 
   const customAnimationFadeRight = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(50px, 0, 0);
-  }
+    from {
+      opacity: 0;
+      transform: translate3d(50px, 0, 0);
+    }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  `
 
   return (
     <div className="flex flex-col md:flex-row items-center md:justify-around my-12 md:my-20 gap-10 md:gap-0">
@@ -70,6 +70,7 @@ function Services() {
               </li>
             ))}
           </ul>
+          
           <hr className="my-6 border-gray-300" />
           <p>
             Para mayor información contáctenos presionando el botón de abajo
