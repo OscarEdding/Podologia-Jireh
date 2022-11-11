@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 function Navbar() {
-  
+
   const [isOpen, setIsOpen] = useState(false)
 
   const scrollToTop = () => {
@@ -45,19 +45,20 @@ function Navbar() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-20 flex items-baseline space-x-4">
-                    {sections.map((sectionDesktop, indexDesktop) => (
-                      <Link
-                        key={indexDesktop}
-                        activeClass="active"
-                        to={sectionDesktop.to}
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500} 
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-                          {sectionDesktop.service}
-                      </Link>
-                    ))}
+                  {sections.map((sectionDesktop, indexDesktop) => (
+                    <Link
+                      key={indexDesktop}
+                      activeClass="active"
+                      to={sectionDesktop.to}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer"
+                      >
+                      {sectionDesktop.service}
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
@@ -116,21 +117,22 @@ function Navbar() {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          {(ref) => (
+          {() => (
             <div className="md:hidden" id="mobile-menu">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 {sections.map((sectionMobile, indexMobile) => (
-                <Link
-                  key={indexMobile}
-                  activeClass="active"
-                  to={sectionMobile.to}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
+                  <Link
+                    key={indexMobile}
+                    activeClass="active"
+                    to={sectionMobile.to}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer"
+                    onClick={() => setIsOpen(false)}>
                     {sectionMobile.service}
-                </Link>
+                  </Link>
                 ))}
               </div>
             </div>

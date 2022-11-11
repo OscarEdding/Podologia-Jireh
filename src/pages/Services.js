@@ -44,7 +44,7 @@ function Services() {
 `
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:justify-around my-20 gap-10 md:gap-0">
+    <div className="flex flex-col md:flex-row items-center md:justify-around my-12 md:my-20 gap-10 md:gap-0">
       <div className="p-6 shadow-lg rounded-lg bg-gray-100 text-gray-700 w-4/5 md:w-2/5">
         <Reveal keyframes={customAnimationFadeLeft}>
           <h2 className="font-semibold text-3xl mb-5">Servicios</h2>
@@ -72,7 +72,7 @@ function Services() {
           </ul>
           <hr className="my-6 border-gray-300" />
           <p>
-            Para mayor información contactenos presionando el botón de abajo
+            Para mayor información contáctenos presionando el botón de abajo
           </p>
           <a
             href="https://wa.me/56936354209?text=Hola,%20quisiera%20más%20información."
