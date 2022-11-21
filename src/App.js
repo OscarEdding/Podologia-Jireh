@@ -8,6 +8,7 @@ import Prices from "./pages/Prices"
 import Gallery from "./pages/Gallery"
 import Footer from "./components/Footer/Footer"
 import WhatsAppFloating from "./components/WhatsApp Button/WhatsAppFloating"
+import Depilation from "./pages/Depilation"
 
 function PodologiaJireh() {
 
@@ -23,6 +24,9 @@ function PodologiaJireh() {
 
         <div id="prices" />
         <Prices />
+
+        <div id="depilation" />
+        <Depilation />
 
         <div id="gallery" />
         <Gallery />
