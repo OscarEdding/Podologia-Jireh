@@ -34,18 +34,18 @@ function Home() {
   return (
     <div>
       <Carousel />
-      <div className="w-full md:w-full h-full grid grid-flow-row md:grid-cols-2 lg:md:grid-cols-3 px-10 py-10 gap-5 text-xl font-medium">
-        <div className="flex items-center gap-5 border-2 h-48 rounded-3xl p-5 shadow-xl">
-          <FaHandshake className="w-40 h-full" />
-          <span>Certificados y reconocidos por el Ministerio de Salud de Chile</span>
+      <div className="w-full md:w-full h-full grid grid-flow-row md:grid-cols-2 lg:md:grid-cols-3 px-10 py-10 gap-5 text-lg font-medium">
+        <div className="flex items-center gap-5 border-2 rounded-3xl p-5 shadow-xl">
+          <FaHandshake className="w-1/4 max-w-[20%] h-full" />
+          <span className="w-3/4">Certificados y reconocidos por el Ministerio de Salud de Chile</span>
         </div>
-        <div className="flex items-center gap-5 border-2 h-48 rounded-3xl p-5 shadow-xl">
-          <FaHandPaper className="w-40 h-full" />
-          <span>Mantenemos un estándar de calidad utilizando siempre material quirúrgico esterilizado y materiales desechables</span>
+        <div className="flex items-center gap-5 border-2 rounded-3xl p-5 shadow-xl">
+          <FaHandPaper className="w-1/4 max-w-[20%] h-full" />
+          <span className="w-3/4">Mantenemos un estándar de calidad utilizando siempre material quirúrgico esterilizado y materiales desechables</span>
         </div>
-        <div className="flex items-center gap-5 border-2 h-48 rounded-3xl p-5 shadow-xl">
-          <FaSmile className="w-40 h-full" />
-          <span>Promoción continua a estilos de vida saludable y logrando la recuperación total de las afecciones del pie.</span>
+        <div className="flex items-center gap-5 border-2 rounded-3xl p-5 shadow-xl">
+          <FaSmile className="w-1/4 max-w-[20%] h-full" />
+          <span className="w-3/4">Promoción continua a estilos de vida saludable y logrando la recuperación total de las afecciones del pie.</span>
         </div>
       </div>
       <div className="w-full h-full  bg-fixed bg-cover bg-[url('https://podologia-jireh.s3.sa-east-1.amazonaws.com/bg-podology.jpg')]">
