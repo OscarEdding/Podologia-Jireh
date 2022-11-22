@@ -1,4 +1,5 @@
 import React from "react"
+import { FaWhatsapp } from "react-icons/fa"
 
 function WhatsAppFloating() {
 
@@ -13,7 +14,7 @@ function WhatsAppFloating() {
         <div className=" h-16  bg-slate-600 rotate-45 transform origin-top-left"></div>
       </div>
       <a href="https://wa.me/56936354209?text=Hola,%20quisiera%20agendar%20una%20hora." className="fixed w-14 h-14 bottom-10 right-10 bg-[#25d366] rounded-full text-center text-3xl z-50 shadow-[2px_2px_3px_3px_rgba(0,0,0,0.2)]">
-        <i className="fa fa-whatsapp mt-[13px] text-white"></i>
+        <FaWhatsapp className="w-full h-full p-2.5 text-white" />
       </a>
     </div>
   )

@@ -1,13 +1,6 @@
 import React from "react"
-import Services from "./Services"
 
 function Depilation() {
-
-  const headers = [
-    "SERVICIO",
-    "HOMBRE",
-    "MUJER"
-  ]
 
   const manBody = [
     { service: "Axilas", price: "5.000" },

@@ -1,6 +1,7 @@
 import React from "react"
 import { Reveal } from "react-awesome-reveal"
 import { keyframes } from "@emotion/react"
+import { Link } from "react-scroll"
 
 function Services() {
 
@@ -66,7 +67,24 @@ function Services() {
             {otherServices.map((otherService, indexOtherService) => (
               <li key={indexOtherService} className="flex items-center space-x-3">
                 <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
+                {otherService === "Depilación" ?
+                  <span>
+                    {otherService}
+                    &nbsp;➤&nbsp;
+                    <Link
+                      activeClass="active"
+                      to="depilation"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      className="hover:underline text-blue-800 cursor-pointer">
+                        Lista de precios
+                    </Link>
+                  </span>
+                  :
                 <span>{otherService}</span>
+                }
               </li>
             ))}
           </ul>
