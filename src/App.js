@@ -9,6 +9,7 @@ import Gallery from "./pages/Gallery"
 import Footer from "./components/Footer/Footer"
 import WhatsAppFloating from "./components/WhatsApp Button/WhatsAppFloating"
 import Depilation from "./pages/Depilation"
+import Schedules from "./pages/Schedules"
 
 function PodologiaJireh() {
 
@@ -32,6 +33,7 @@ function PodologiaJireh() {
         <Gallery />
       </div>
       <WhatsAppFloating />
+      <Schedules />
       < Footer />
     </div>
   )
