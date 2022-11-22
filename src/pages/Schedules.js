@@ -17,7 +17,6 @@ function Schedules() {
           <p className="text-lg">Desde 10:00 hrs.<br />Hasta 16:00 hrs.</p>
         </div>
       </div>
-
     </div>
   )
 }
