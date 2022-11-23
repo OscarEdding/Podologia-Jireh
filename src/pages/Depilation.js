@@ -67,37 +67,137 @@ function Depilation() {
       <section>
         <div class="p-5 h-full bg-gray-100">
           <h1 class="text-xl mb-2 text-center">Tabla de precios para depilación</h1>
-
-          <div class="overflow-auto rounded-lg shadow hidden md:block">
-            <table class="w-full">
-              <thead class="bg-gray-50 border-b-2 border-gray-200">
-                <tr>
-                  <th class="p-3 text-sm font-semibold tracking-wide text-left">Servicios</th>
-                  <th class="w-24 p-3 text-sm font-semibold tracking-wide text-left">Status</th>
-                  <th class="w-24 p-3 text-sm font-semibold tracking-wide text-left">Date</th>
-                  <th class="w-32 p-3 text-sm font-semibold tracking-wide text-left">Total</th>
-                </tr>
-              </thead>
-              <div class="bg-gray-50 border-b-2 p-1 rounded-md border-gray-200">
-                <span
-                  class="p-1.5 ml-10 text-sm font-medium uppercase tracking-wider text-cyan-800 bg-cyan-400 rounded-lg bg-opacity-50"><b>Hombre: </b>Cuerpo
-                </span>
-                <span></span>
-              </div>
-              <tbody class="divide-y divide-gray-100">
-                <tr class="bg-white">
-                  <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
-                    Kring New Fit office chair, mesh + PU, black
-                  </td>
-                  <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+          <div className="flex flex-col items-center">
+            <div className="flex gap-10">
+              <div class="overflow-auto rounded-lg shadow hidden md:block">
+                <table class="w-full">
+                  <thead class="bg-gray-50 border-b-2 border-gray-200">
+                    <tr>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Servicios</th>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Precio</th>
+                    </tr>
+                  </thead>
+                  <div class="bg-gray-50 border-b-2 p-1 rounded-md border-gray-200">
                     <span
-                      class="p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-200 rounded-lg bg-opacity-50">Delivered</span>
-                  </td>
-                  <td class="p-3 text-sm text-gray-700 whitespace-nowrap">16/10/2021</td>
-                  <td class="p-3 text-sm text-gray-700 whitespace-nowrap">$200.00</td>
-                </tr>
-              </tbody>
-            </table>
+                      class="p-1.5 ml-10 text-sm font-medium uppercase tracking-wider text-cyan-800 bg-cyan-400 rounded-lg bg-opacity-50"><b>Hombre: </b>Cuerpo
+                    </span>
+                  </div>
+                  <tbody class="divide-y divide-gray-100">
+                    {manBody.map((serv) => (
+                      <tr class="bg-white">
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                          {serv.service}
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">$ {serv.price}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div class="overflow-auto rounded-lg shadow hidden md:block">
+                <table class="w-full">
+                  <thead class="bg-gray-50 border-b-2 border-gray-200">
+                    <tr>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Servicios</th>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Precio</th>
+                    </tr>
+                  </thead>
+                  <div class="bg-gray-50 border-b-2 p-1 rounded-md border-gray-200">
+                    <span
+                      class="p-1.5 ml-10 text-sm font-medium uppercase tracking-wider text-cyan-800 bg-cyan-400 rounded-lg bg-opacity-50"><b>Hombre: </b>Cara
+                    </span>
+                  </div>
+                  <tbody class="divide-y divide-gray-100">
+                    {manFace.map((serv) => (
+                      <tr class="bg-white">
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                          {serv.service}
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">$ {serv.price}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+            <div className="flex gap-10">
+              <div class="overflow-auto rounded-lg shadow hidden md:block">
+                <table class="w-full">
+                  <thead class="bg-gray-50 border-b-2 border-gray-200">
+                    <tr>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Servicios</th>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Precio</th>
+                    </tr>
+                  </thead>
+                  <div class="bg-gray-50 border-b-2 p-1 rounded-md border-gray-200">
+                    <span
+                      class="p-1.5 ml-10 text-sm font-medium uppercase tracking-wider text-pink-800 bg-pink-500  rounded-lg bg-opacity-50"><b>Mujer: </b>Cuerpo
+                    </span>
+                  </div>
+                  <tbody class="divide-y divide-gray-100">
+                    {womanBody.map((serv) => (
+                      <tr class="bg-white">
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                          {serv.service}
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">$ {serv.price}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div class="overflow-auto rounded-lg shadow hidden md:block">
+                <table class="w-full">
+                  <thead class="bg-gray-50 border-b-2 border-gray-200">
+                    <tr>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Servicios</th>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Precio</th>
+                    </tr>
+                  </thead>
+                  <div class="bg-gray-50 border-b-2 p-1 rounded-md border-gray-200">
+                    <span
+                      class="p-1.5 ml-10 text-sm font-medium uppercase tracking-wider text-pink-800 bg-pink-500  rounded-lg bg-opacity-50"><b>Mujer: </b>Cara
+                    </span>
+                  </div>
+                  <tbody class="divide-y divide-gray-100">
+                    {manFace.map((serv) => (
+                      <tr class="bg-white">
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                          {serv.service}
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">$ {serv.price}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div class="overflow-auto rounded-lg shadow hidden md:block">
+                <table class="w-full">
+                  <thead class="bg-gray-50 border-b-2 border-gray-200">
+                    <tr>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Servicios</th>
+                      <th class="p-3 text-sm font-semibold tracking-wide text-left">Precio</th>
+                    </tr>
+                  </thead>
+                  <div class="bg-gray-50 border-b-2 p-1 rounded-md border-gray-200">
+                    <span
+                      class="p-1.5 ml-10 text-sm font-medium uppercase tracking-wider text-pink-800 bg-pink-500  rounded-lg bg-opacity-50"><b>Mujer: </b>Zona pintima
+                    </span>
+                  </div>
+                  <tbody class="divide-y divide-gray-100">
+                    {womanPrivateParts.map((serv) => (
+                      <tr class="bg-white">
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">
+                          {serv.service}
+                        </td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">$ {serv.price}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden">

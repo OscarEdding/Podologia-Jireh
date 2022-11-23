@@ -46,7 +46,7 @@ const Footer = () => {
                       smooth={true}
                       offset={-70}
                       duration={500}
-                      className="hover:underline">
+                      className="hover:underline cursor-pointer">
                       {section.service}
                     </Link>
                   </li>
