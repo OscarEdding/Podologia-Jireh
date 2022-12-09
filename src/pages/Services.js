@@ -1,23 +1,20 @@
 import React from "react"
 import { Reveal } from "react-awesome-reveal"
 import { keyframes } from "@emotion/react"
-import { Link } from "react-scroll"
 
 function Services() {
 
   const services = [
-    "Onicotomía (Corte de uña)",
-    "Limpieza de surcos",
-    "Debastado ungueal (Limpieza de uña)",
-    "Retiro de hiperqueratosis (Durezas leves)",
-    "Pulido dérmico",
-    "Hidratación"
+    "Podología clínica infantil",
+    "Podología clínica adulto",
+    "Podología clínica adulto mayor",
+    "Podología clínica para pie diabético"
   ]
 
   const otherServices = [
     "Bracket (Corrección de uña)",
     "Reconstrucción ungueal",
-    "Depilación"
+    "Depilación con cera de abeja"
   ]
 
   const customAnimationFadeLeft = keyframes`
@@ -48,7 +45,7 @@ function Services() {
     <div className="flex flex-col md:flex-row items-center md:justify-around my-12 md:my-20 gap-10 md:gap-0">
       <div className="p-6 shadow-lg rounded-lg bg-gray-100 text-gray-700 w-4/5 md:w-2/5">
         <Reveal keyframes={customAnimationFadeLeft}>
-          <h2 className="font-semibold text-3xl mb-5">Servicios</h2>
+          <h2 className="font-semibold text-3xl mb-5">Servicios principales</h2>
           <ul className="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
             {services.map((service, indexService) => (
               <li key={indexService} className="flex items-center space-x-3">
@@ -71,16 +68,11 @@ function Services() {
                   <span>
                     {otherService}
                     &nbsp;➤&nbsp;
-                    <Link
-                      activeClass="active"
-                      to="depilation"
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
+                    <a
+                      href="https://wa.me/56936354209?text=Hola,%20quisiera%20agendar%20una%20hora." 
                       className="hover:underline text-blue-800 cursor-pointer">
-                        Lista de precios
-                    </Link>
+                        Agenda tu hora
+                    </a>
                   </span>
                   :
                 <span>{otherService}</span>

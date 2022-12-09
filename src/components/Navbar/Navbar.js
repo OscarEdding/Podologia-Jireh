@@ -22,10 +22,6 @@ function Navbar() {
     {
       to: "prices",
       service: "Precios"
-    },
-    {
-      to: "gallery",
-      service: "Galería"
     }
   ]
 

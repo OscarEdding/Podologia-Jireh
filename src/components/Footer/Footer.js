@@ -16,10 +16,6 @@ const Footer = () => {
     {
       to: "prices",
       service: "Precios"
-    },
-    {
-      to: "gallery",
-      service: "Galería"
     }
   ]
 
