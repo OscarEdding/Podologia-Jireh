@@ -5,7 +5,6 @@ import { FaHandshake, FaHandPaper, FaSmile } from "react-icons/fa"
 import { Zoom } from "react-awesome-reveal"
 
 import Carousel from "../components/Carousel/Carousel"
-import CarouselMobile from "../components/Carousel/CarouselMobile"
 
 function Home() {
 
@@ -35,12 +34,7 @@ function Home() {
 
   return (
     <div>
-      <div className="hidden md:block">
-        <Carousel />
-      </div>
-      <div className="block md:hidden">
-        <CarouselMobile />
-      </div>
+      <Carousel />
       <Zoom>
         <div className="w-full md:w-full h-full grid grid-flow-row md:grid-cols-2 lg:md:grid-cols-3 px-10 py-10 gap-5 text-lg font-medium">
           <div className="flex items-center gap-5 border-2 rounded-3xl p-5 shadow-xl">

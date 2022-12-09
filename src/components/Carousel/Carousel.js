@@ -26,20 +26,24 @@ const Carousel = () => {
 
   const carousel = [
     {
-      img: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_1.png",
+      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_1.png",
+      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_1_Mobile.png",
       alt: "1",
       active: "active"
     },
     {
-      img: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_2.png",
+      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_2.png",
+      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_2_Mobile.png",
       alt: "2"
     },
     {
-      img: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v1.png",
+      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v1.png",
+      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v3.png",
       alt: "3"
     },
     {
-      img: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v2.png",
+      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v2.png",
+      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v4.png",
       alt: "4"
     },
   ]
@@ -68,8 +72,13 @@ const Carousel = () => {
         {carousel.map((photo, indexPhoto) => (
           <div key={indexPhoto} className={`carousel-item ${photo.active} float-left w-full`}>
             <img
-              src={photo.img}
-              className="block w-full"
+              src={photo.imgDesktop}
+              className="hidden md:block w-full"
+              alt={photo.alt}
+            />
+            <img
+              src={photo.imgMobile}
+              className="block md:hidden w-full"
               alt={photo.alt}
             />
           </div>
