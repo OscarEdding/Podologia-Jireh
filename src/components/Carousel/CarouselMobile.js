@@ -26,12 +26,12 @@ const Carousel = () => {
 
   const carousel = [
     {
-      img: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_1.png",
+      img: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_1_Mobile.png",
       alt: "1",
       active: "active"
     },
     {
-      img: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_2.png",
+      img: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_2_Mobile.png",
       alt: "2"
     },
     {
