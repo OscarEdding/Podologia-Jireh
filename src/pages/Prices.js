@@ -23,7 +23,7 @@ function Prices() {
       url: "https://wa.me/56936354209?text=Hola,%20quisiera%20agendar%20una%20hora%20para%20plan%20Podología%20integrada%20completa.",
     },
     {
-      title: "Uñas encarnadas (Onicocriptósis)",
+      title: "Onicocriptósis (Uñas encarnadas)",
       subtitle: "Servicio solicitado por encarnaciones de uñas",
       price: "$25.000",
       secondaryPrice: "$5.000",
@@ -41,7 +41,7 @@ function Prices() {
       addedService: "",
       services: [],
       secondaryService: "",
-      url: "https://wa.me/56936354209?text=Hola,%20quisiera%20agendar%20una%20hora%20para%20plan%20Podología%20integrada%20completa.",
+      url: "https://wa.me/56936354209?text=Hola,%20quisiera%20agendar%20una%20hora%20para%20plan%20Podología%20clínica%20niños.",
     }, {
       title: "Onicomicósis (Hongo en uñas)",
       subtitle: "Valor según estado de la lámina (Uña)",
