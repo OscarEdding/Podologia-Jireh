@@ -66,6 +66,9 @@ const Footer = () => {
                 <li className="mb-4">
                   <a href="https://wa.me/56936354209?text=Hola,%20quisiera%20agendar%20una%20hora." className="hover:underline">+56 9 3635 4209</a>
                 </li>
+                <li className="mb-4">
+                  <a href="https://goo.gl/maps/ZaZGFkr91RBYwSveA" className="hover:underline">Santiago Centro</a>
+                </li>
               </ul>
             </div>
           </div>
