@@ -14,7 +14,8 @@ function Services() {
   const otherServices = [
     "Bracket (Corrección de uña)",
     "Reconstrucción ungueal",
-    "Depilación con cera de abeja"
+    "Depilación con cera de abeja",
+    "Medicina China"
   ]
 
   const customAnimationFadeLeft = keyframes`

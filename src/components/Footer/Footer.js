@@ -22,14 +22,14 @@ const Footer = () => {
   return (
     <div>
       <footer className="p-4 bg-white sm:p-6 bg-gradient-to-r from-cyan-900 to-cyan-500">
-        <div className="lg:flex md:justify-between md:px-36">
+        <div className=" lg:justify-between md:px-36">
           <div className="mb-6">
             <a href="https://www.instagram.com/podologiaclinicajirehestado/" className="flex items-center">
               <img src="https://podologia-jireh.s3.sa-east-1.amazonaws.com/logo.png" className="mr-3 h-8" alt="FlowBite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Podología JIREH</span>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:grid-cols-4">
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">JIREH</h2>
               <ul className="text-gray-300">
@@ -68,6 +68,17 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a href="https://goo.gl/maps/ZaZGFkr91RBYwSveA" className="hover:underline">Estado 25, Santiago Centro</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">Otros servicios</h2>
+              <ul className="text-gray-300">
+                <li className="mb-4">
+                  <a href="https://wa.me/56979203657?text=Hola,%20quisiera%20agendar%20una%20hora%20para%20Depilación." className="hover:underline">Delipación</a>
+                </li>
+                <li className="mb-4">
+                  <a href="https://wa.me/56962929438?text=Hola,%20quisiera%20agendar%20una%20hora%20para%20Medicina%20China." className="hover:underline">Medicina China</a>
                 </li>
               </ul>
             </div>
