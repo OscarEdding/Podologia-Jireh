@@ -21,6 +21,10 @@ const Carousel = () => {
     {
       slide: "3",
       label: "Slide 4"
+    },
+    {
+      slide: "4",
+      label: "Slide 5"
     }
   ]
 
