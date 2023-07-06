@@ -24,7 +24,7 @@ const Footer = () => {
       <footer className="p-4 bg-white sm:p-6 bg-gradient-to-r from-cyan-900 to-cyan-500">
         <div className="lg:flex md:justify-between md:px-36">
           <div className="mb-6">
-            <a href="https://www.instagram.com/podologiaclinicjireh/" className="flex items-center">
+            <a href="https://www.instagram.com/podologiaclinicajirehestado/" className="flex items-center">
               <img src="https://podologia-jireh.s3.sa-east-1.amazonaws.com/logo.png" className="mr-3 h-8" alt="FlowBite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Podología JIREH</span>
             </a>
@@ -53,7 +53,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold uppercase dark:text-white">Siguenos en</h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
-                  <a href="https://www.instagram.com/podologiaclinicjireh/" className="hover:underline ">Instagram</a>
+                  <a href="https://www.instagram.com/podologiaclinicajirehestado/" className="hover:underline ">Instagram</a>
                 </li>
                 <li>
                   <a href="/#" className="hover:underline">Facebook</a>
@@ -67,7 +67,7 @@ const Footer = () => {
                   <a href="https://wa.me/56936354209?text=Hola,%20quisiera%20agendar%20una%20hora." className="hover:underline">+56 9 3635 4209</a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://goo.gl/maps/ZaZGFkr91RBYwSveA" className="hover:underline">Santiago Centro</a>
+                  <a href="https://goo.gl/maps/ZaZGFkr91RBYwSveA" className="hover:underline">Estado 25, Santiago Centro</a>
                 </li>
               </ul>
             </div>

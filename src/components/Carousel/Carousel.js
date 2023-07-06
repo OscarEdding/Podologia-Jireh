@@ -26,24 +26,24 @@ const Carousel = () => {
 
   const carousel = [
     {
-      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_1.png",
-      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_1_Mobile.png",
+      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Desktop/Carousel+1+Desktop.png",
+      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Mobile/Carousel+1+Mobile.png",
       alt: "1",
       active: "active"
     },
     {
-      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_2.png",
-      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Carousel_2_Mobile.png",
+      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Desktop/Carousel+2+Desktop.png",
+      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Mobile/Carousel+2+Mobile.png",
       alt: "2"
     },
     {
-      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v1.png",
-      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v3.png",
+      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Desktop/Comparison+1+Desktop.png",
+      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Mobile/Comparison+1+Mobile.png",
       alt: "3"
     },
     {
-      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v2.png",
-      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Comparison_v4.png",
+      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Desktop/Comparison+2+Desktop.png",
+      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Mobile/Comparison+2+Mobile.png",
       alt: "4"
     },
   ]
