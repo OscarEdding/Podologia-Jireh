@@ -7,7 +7,7 @@ function Prices() {
     {
       title: "Podología integrada completa",
       subtitle: "Juvenil - Adulto - Adulto mayor",
-      price: "$14.000",
+      price: "$15.000",
       secondaryPrice: "",
       addedService: "",
       services: [
@@ -25,7 +25,7 @@ function Prices() {
     {
       title: "Onicocriptósis (Uñas encarnadas)",
       subtitle: "Servicio solicitado por encarnaciones de uñas",
-      price: "$25.000",
+      price: "$30.000",
       secondaryPrice: "$5.000",
       addedService: "+ 1ra curación",
       services: [
@@ -36,7 +36,7 @@ function Prices() {
     }, {
       title: "Podología clínica niños",
       subtitle: "",
-      price: "$12.000",
+      price: "$13.000",
       secondaryPrice: "",
       addedService: "",
       services: [],

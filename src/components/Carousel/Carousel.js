@@ -21,10 +21,6 @@ const Carousel = () => {
     {
       slide: "3",
       label: "Slide 4"
-    },
-    {
-      slide: "4",
-      label: "Slide 5"
     }
   ]
 
@@ -49,12 +45,7 @@ const Carousel = () => {
       imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Desktop/Comparison+2+Desktop.png",
       imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Mobile/Comparison+2+Mobile.png",
       alt: "4"
-    },
-    {
-      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Medicina+China+Desktop.png",
-      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Medicina+China+Mobile.png",
-      alt: "5"
-    },
+    }
   ]
 
   return (
