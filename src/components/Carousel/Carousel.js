@@ -17,10 +17,6 @@ const Carousel = () => {
     {
       slide: "2",
       label: "Slide 3"
-    },
-    {
-      slide: "3",
-      label: "Slide 4"
     }
   ]
 
@@ -32,19 +28,14 @@ const Carousel = () => {
       active: "active"
     },
     {
-      imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Desktop/Carousel+2+Desktop.png",
-      imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Mobile/Carousel+2+Mobile.png",
-      alt: "2"
-    },
-    {
       imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Desktop/Comparison+1+Desktop.png",
       imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Mobile/Comparison+1+Mobile.png",
-      alt: "3"
+      alt: "2"
     },
     {
       imgDesktop: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Desktop/Comparison+2+Desktop.png",
       imgMobile: "https://podologia-jireh.s3.sa-east-1.amazonaws.com/Mobile/Comparison+2+Mobile.png",
-      alt: "4"
+      alt: "3"
     }
   ]
 
